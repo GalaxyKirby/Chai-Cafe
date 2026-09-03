@@ -1,0 +1,15 @@
+:root {
+  /* Global Colors */
+  --beige: #EFD09E;
+  --light-brown: #775144;
+  --dark-brown: #2A0800;
+
+  --light-blue: #359EC0;
+  --dark-blue: #213D55;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  /* This changes the size of the "rem" unit when the page scales */
+  font-size: clamp(10px, 1.2vw + 10px, 15px)
+}
+
