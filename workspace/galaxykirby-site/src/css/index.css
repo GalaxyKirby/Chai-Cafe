@@ -15,7 +15,7 @@ body {
 
 #hero-img {
     width: 102%;
-    height: 300px; 
+    height: 17rem; 
     object-fit: cover; 
     margin-top: -0.65rem;
 
@@ -37,6 +37,8 @@ body {
     width: 50rem;
     height: fit-content;
 
+    padding: 1rem;
+
     margin-left: auto;
     margin-right: auto;
 
@@ -48,6 +50,8 @@ body {
 
     filter: drop-shadow(6px, 6px, 0px, var(--dark-blue));
 }
+
+/* Side Info */
 
 .index-side {
     /* Sizing & Position */
@@ -66,21 +70,79 @@ body {
     filter: drop-shadow(6px, 6px, 0px, var(--dark-blue));
 }
 
+.side-img-container {
+    width: 10rem;
+    height: 20rem;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.side-img {
+    width: 7.5rem;
+    height: 7.5rem;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index-hr {
+    width: 75%;
+    height: 0.7rem;
+
+    color: var(--light-brown);
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hobbies Styles */
+.hobbies-box {
+
+    height: 16rem;
+    width: 16rem;
+
+    background-color: var(--light-brown);
+
+    border: 2px solid var(--light-blue);
+    border-radius: 12px;
+
+    
+}
+
 /* Text Styles */
 .bio-text {
-    color: var(--light-brown);
-    
-    
+    color: var(--dark-brown);
+
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .index-title {
+    color: var(--light-brown);
 
+    font-size: 2.2rem;
+    font-weight: bold;
+
+    filter: drop-shadow(3px, 3px, 0px, var(--dark-brown));
 }
 
 .index-subtitle {
+    color: var(--light-brown);
 
+    font-size: 1.9rem;
+    font-weight: bold;
+
+    filter: drop-shadow(3px, 3px, 0px, var(--dark-brown));
 }
 
 .image-subheader {
+    color: var(--light-brown);
 
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    filter: drop-shadow(3px, 3px, 0px, var(--dark-brown));
 }
