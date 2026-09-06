@@ -19,7 +19,7 @@ body {
     object-fit: cover; 
     margin-top: -0.65rem;
 
-    /* Masking the image for a gradient effect */
+    /* Masking the image for the gradient effect */
     mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%); 
 }
@@ -33,7 +33,7 @@ body {
 }
 
 #index-center {
-    /* Sizing & Position */
+    
     width: 50rem;
     height: fit-content;
 
@@ -42,7 +42,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    /* Colors */
+    
     background-color: var(--beige);
 
     border: 2px solid var(--light-blue);
@@ -54,14 +54,14 @@ body {
 /* Side Info */
 
 .index-side {
-    /* Sizing & Position */
+    
     width: 15rem;
     height: fit-content;
 
     margin-left: auto;
     margin-right: auto;
 
-    /* Colors */
+    
     background-color: var(--beige);
 
     border: 2px solid var(--light-blue);
@@ -99,17 +99,43 @@ body {
 }
 
 /* Hobbies Styles */
-.hobbies-box {
+.hobbies-row {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 
+    display: flex;
+    flex-direction: row;
+}
+
+.hobbies-box {
     height: 16rem;
     width: 16rem;
 
+    padding: 1.5rem;
+
     background-color: var(--light-brown);
 
-    border: 2px solid var(--light-blue);
+    border: 2px solid var(--dark-brown);
     border-radius: 12px;
 
-    
+    text-align: center;
+}
+
+.hobbies-btn {
+    height: 5rem;
+    width: 65%;
+
+    border: none;
+    border-radius: 12px;
+    background-color: var(--light-blue);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+
+    margin-top: auto;
+    margin-bottom: 1rem;
 }
 
 /* Text Styles */

@@ -16,10 +16,20 @@ export default function IndexCenter() {
                 <p className="index-subtitle">My Numerous Hobbies</p>
                 <div id="index-hobbies-container">
                     <div className="hobbies-row">
-                        
+                        <div className="hobbies-box">
+                            <button className="hobbies-btn">E-Sports</button>
+                        </div>
+                        <div className="hobbies-box">
+                            <button className="hobbies-btn">Coding</button>
+                        </div>
                     </div>
                     <div className="hobbies-row">
-
+                        <div className="hobbies-box">
+                            <button className="hobbies-btn">Hardware</button>
+                        </div>
+                        <div className="hobbies-box">
+                            <button className="hobbies-btn">Books</button>
+                        </div>
                     </div>
                 </div>
             </div>
