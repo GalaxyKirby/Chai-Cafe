@@ -30,6 +30,8 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+
+    padding: 2rem;
 }
 
 #index-center {
@@ -37,18 +39,20 @@ body {
     width: 50rem;
     height: fit-content;
 
-    padding: 1rem;
+    padding: 0.5rem;
 
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
 
     
     background-color: var(--beige);
 
-    border: 2px solid var(--light-blue);
-    border-radius: 12px;
+    border: 3px solid var(--light-blue);
+    border-radius: 1.5rem;
 
     filter: drop-shadow(6px, 6px, 0px, var(--dark-blue));
+
+    text-align: center;
 }
 
 /* Side Info */
@@ -61,13 +65,12 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    
     background-color: var(--beige);
 
-    border: 2px solid var(--light-blue);
-    border-radius: 12px;
+    border: 3px solid var(--light-blue);
+    border-radius: 1.5rem;
 
-    filter: drop-shadow(6px, 6px, 0px, var(--dark-blue));
+    filter: drop-shadow(0.5rem 0.5rem var(--dark-blue));
 }
 
 .side-img-container {
@@ -86,6 +89,9 @@ body {
     
     margin-left: auto;
     margin-right: auto;
+
+    border: 2px solid var(--dark-brown);
+    border-radius: 1.5rem;
 }
 
 .index-hr {
@@ -116,8 +122,8 @@ body {
 
     background-color: var(--light-brown);
 
-    border: 2px solid var(--dark-brown);
-    border-radius: 12px;
+    border: 3px solid var(--dark-brown);
+    border-radius: 1.5rem;
 
     text-align: center;
 }
@@ -127,7 +133,7 @@ body {
     width: 65%;
 
     border: none;
-    border-radius: 12px;
+    border-radius: 1.5rem;
     background-color: var(--light-blue);
     color: white;
     font-size: 1.5rem;
@@ -142,23 +148,26 @@ body {
 .bio-text {
     color: var(--dark-brown);
 
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 700;
+
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .index-title {
     color: var(--light-brown);
 
-    font-size: 2.2rem;
+    font-size: 4rem;
     font-weight: bold;
 
-    filter: drop-shadow(3px, 3px, 0px, var(--dark-brown));
+    text-shadow: 0.2rem 0.2rem var(--dark-brown);
 }
 
 .index-subtitle {
     color: var(--light-brown);
 
-    font-size: 1.9rem;
+    font-size: 3rem;
     font-weight: bold;
 
     filter: drop-shadow(3px, 3px, 0px, var(--dark-brown));
