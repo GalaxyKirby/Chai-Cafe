@@ -11,19 +11,19 @@ export default function IndexSide(
             <div className="index-side">
                 <div className="side-img-container">
                     <img className="side-img" src={image1}/>
-                    <h3 className="index-subheader">{name1}</h3>
+                    <h3 className="image-subheader">{name1}</h3>
                 </div>
                 <div className="side-img-container">
                     <img className="side-img" src={image2}/>
-                    <h3 className="index-subheader">{name2}</h3>
+                    <h3 className="image-subheader">{name2}</h3>
                 </div>
                 <div className="side-img-container">
                     <img className="side-img" src={image3}/>
-                    <h3 className="index-subheader">{name3}</h3>
+                    <h3 className="image-subheader">{name3}</h3>
                 </div>
                 <div className="side-img-container">
                     <img className="side-img" src={image4}/>
-                    <h3 className="index-subheader">{name4}</h3>
+                    <h3 className="image-subheader">{name4}</h3>
                 </div>
             </div>
         </>
