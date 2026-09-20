@@ -1,5 +1,10 @@
 import '../css/index.css'
 
+import ESportsPhoto from '../assets/Splatoon-Photo.jpg'
+import CodingPhoto from '../assets/HTML-Img.png'
+import HardwarePhoto from '../assets/PC-Photo.jpg'
+import BooksPhoto from '../assets/Bookshelf.jpg'
+
 export default function IndexCenter() {
     return (
         <>
@@ -15,17 +20,21 @@ export default function IndexCenter() {
                     <div className="hobbies-row">
                         <div className="hobbies-box">
                             <button className="hobbies-btn">E-Sports</button>
+                            <img className='hobbies-photo' src={ESportsPhoto} />
                         </div>
                         <div className="hobbies-box">
                             <button className="hobbies-btn">Coding</button>
+                            <img className='hobbies-photo' src={CodingPhoto} />
                         </div>
                     </div>
                     <div className="hobbies-row">
                         <div className="hobbies-box">
                             <button className="hobbies-btn">Hardware</button>
+                            <img className='hobbies-photo' src={HardwarePhoto} />
                         </div>
                         <div className="hobbies-box">
                             <button className="hobbies-btn">Books</button>
+                            <img className='hobbies-photo' src={BooksPhoto} />
                         </div>
                     </div>
                 </div>

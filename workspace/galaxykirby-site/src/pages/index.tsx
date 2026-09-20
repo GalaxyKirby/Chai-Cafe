@@ -19,37 +19,48 @@ import ChaiPfp from '../assets/Chai_pfp.png'
 import ChaiCosplay from '../assets/Chai-Metaphor.png'
 import CatCoffee from '../assets/cat-with-coffee.gif'
 
+import SillyDeer from '../assets/Deer-Silly.jpg'
+
 export default function Index() {
     return (
         <>
+            <div className='warning-page'>
+                <h1 className='warning-text'>View Too Thin!</h1>
+                <h1 className='warning-text'>This Site Was Created For Landscape View :3</h1>
+                <img className='oops-photo' src={SillyDeer} />
+            </div>
             <body>
-                <Hero />
-                <br />
-                <div id="index-content">
-                    <div className="border-photo-div">
-                        <img className="border-photo-left" src={ChaiCosplay} />
-                        <img className="border-photo-left" src={KirbyCoffee} />
-                    </div>
-                    <IndexSide 
-                        image1={Metaphor} image2={PokemonBW}
-                        image3={Splatoon3} image4={Reload}
+                <div className='body-container'>
+                    <Hero />
+                    <br />
+                    <div id="index-content">
+                        <div className="border-photo-div">
+                            <img className="border-photo-left" src={ChaiCosplay} />
+                            <img className="border-photo-left" src={KirbyCoffee} />
+                        </div>
+                        <IndexSide
+                            title='Favorite Games'
+                            image1={Metaphor} image2={PokemonBW}
+                            image3={Splatoon3} image4={Reload}
 
-                        name1="Metaphor Refantazio" name2="Pokemon Gen 5"
-                        name3="Splatoon 3" name4="Persona 3 Reload"
-                    />
+                            name1="Metaphor Refantazio" name2="Pokémon Gen 5"
+                            name3="Splatoon 3" name4="Persona 3 Reload"
+                        />
 
-                    <IndexCenter />
+                        <IndexCenter />
 
-                    <IndexSide
-                        image1={Arcanine} image2={Espeon}
-                        image3={Bulbasaur} image4={Dragonite}
+                        <IndexSide
+                            title='Favorite Pokémon'
+                            image1={Arcanine} image2={Espeon}
+                            image3={Bulbasaur} image4={Dragonite}
 
-                        name1="Arcanine" name2="Espeon"
-                        name3="Bulbasaur" name4="Dragonite"
-                    />
-                    <div className="border-photo-div">
-                        <img className="border-photo-right" src={ChaiPfp} />
-                        <img className="border-photo-right" src={CatCoffee} />
+                            name1="Arcanine" name2="Espeon"
+                            name3="Bulbasaur" name4="Dragonite"
+                        />
+                        <div className="border-photo-div">
+                            <img className="border-photo-right" src={ChaiPfp} />
+                            <img className="border-photo-right" src={CatCoffee} />
+                        </div>
                     </div>
                 </div>
             </body>

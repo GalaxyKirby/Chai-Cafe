@@ -6,6 +6,7 @@ html, body {
 }
 
 body {
+
     background-image: url('../assets/wood-grain-background.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -13,8 +14,59 @@ body {
     background-attachment: fixed; 
 }
 
+.warning-page {
+    display: none;
+
+    text-align: center;
+
+    padding: 3rem;
+}
+
+.warning-text {
+    font-size: 4.5rem;
+    font-weight: bolder;
+
+    color: beige;
+
+}
+
+.oops-photo {
+    width: 80%;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 0.3rem;
+
+    border: solid 3px var(--dark-brown)
+}
+
+/* Making it so mobile view will give a warning to rotate the device */
+@media only screen and (max-width: 768px) {
+
+.warning-page {
+    display: flex;
+
+    flex-direction: column;
+
+    background-image: url('../assets/wood-grain-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed; 
+  }
+
+  .body-container {
+    display: none;
+  }
+
+}
+
+/* Hero */
+
 #hero-img {
-    width: 102%;
+    width: 120%;
     height: 17rem; 
     object-fit: cover; 
     margin-top: -0.65rem;
@@ -22,7 +74,57 @@ body {
     /* Masking the image for the gradient effect */
     mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%); 
+
+    display: grid;
 }
+
+.hero-img-back {
+    grid-column: 1;
+    grid-row: 1;
+
+    z-index: 0;
+}
+
+.hero-img-front-txt {
+
+    width: fit-content;
+    grid-column: 1;
+    grid-row: 1;
+
+    margin-top: 6rem;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size:7rem;
+    font-family: cursive;
+    font-weight: bold;
+    color: var(--beige);
+    filter: drop-shadow(0.3rem 0.3rem var(--light-brown));
+
+    position: relative;
+
+    animation: float 3s infinite;
+    -webkit-animation: float 3s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.hero-img-text-container {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 100vw;
+    margin-left: -0.3rem;
+    z-index: 1;
+}
+
+/* Center */
 
 #index-content {
     display: flex;
@@ -77,7 +179,9 @@ body {
 
     filter: drop-shadow(0.5rem 0.5rem var(--dark-blue));
 
-    padding-top: 3rem;
+    padding-top: 1rem;
+
+    text-align: center;
 }
 
 .side-img-container {
@@ -155,6 +259,17 @@ body {
     margin-bottom: 1rem;
 }
 
+.hobbies-photo {
+    height: 13.5rem;
+    width: 16rem;
+
+    overflow: hidden;
+    object-fit: cover;
+
+    border-radius: 0.7rem;
+}
+
+/* Photos On The Edges Of The Page */
 .border-photo-div {
     display: flex;
     flex-direction: column;
@@ -238,3 +353,22 @@ body {
 
     margin-top: 0;
 }
+
+.hero-title {
+    z-index: 1;
+    margin: 0;
+    position: absolute;
+}
+
+.side-title {
+    color: var(--light-brown);
+
+    font-size: 2.4rem;
+    font-weight: bolder;
+
+    filter: drop-shadow(0.1rem 0.1rem 0px var(--dark-brown));
+
+    margin-top: 0;
+}
+
+/* Side Info */
