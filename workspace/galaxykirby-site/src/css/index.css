@@ -135,7 +135,7 @@ body {
 
     padding: 2rem;
 
-    width: 130rem;
+    width: 90rem;
 
     margin-left: auto;
     margin-right: auto;
@@ -211,8 +211,7 @@ body {
     width: 75%;
     font-weight: bold;
     border-width: 0.2rem;
-
-    color: var(--light-brown);
+    border: 3px solid var(--light-brown);
 
     margin-left: auto;
     margin-right: auto;

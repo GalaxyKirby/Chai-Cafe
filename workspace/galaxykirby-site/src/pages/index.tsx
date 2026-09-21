@@ -14,10 +14,10 @@ import Espeon from '../assets/Espeon-Portrait.png'
 import Bulbasaur from '../assets/Bulbasaur.png'
 import Dragonite from '../assets/Dragonite-Portrait.png'
 
-import KirbyCoffee from '../assets/kirby-eating-coffee.gif'
-import ChaiPfp from '../assets/Chai_pfp.png'
-import ChaiCosplay from '../assets/Chai-Metaphor.png'
-import CatCoffee from '../assets/cat-with-coffee.gif'
+//import KirbyCoffee from '../assets/kirby-eating-coffee.gif'
+//import ChaiPfp from '../assets/Chai_pfp.png'
+//import ChaiCosplay from '../assets/Chai-Metaphor.png'
+//import CatCoffee from '../assets/cat-with-coffee.gif'
 
 import SillyDeer from '../assets/Deer-Silly.jpg'
 
@@ -34,10 +34,12 @@ export default function Index() {
                     <Hero />
                     <br />
                     <div id="index-content">
+                        {/*
                         <div className="border-photo-div">
                             <img className="border-photo-left" src={ChaiCosplay} />
                             <img className="border-photo-left" src={KirbyCoffee} />
                         </div>
+                        */}
                         <IndexSide
                             title='Favorite Games'
                             image1={Metaphor} image2={PokemonBW}
@@ -57,10 +59,12 @@ export default function Index() {
                             name1="Arcanine" name2="Espeon"
                             name3="Bulbasaur" name4="Dragonite"
                         />
+                        {/*
                         <div className="border-photo-div">
                             <img className="border-photo-right" src={ChaiPfp} />
                             <img className="border-photo-right" src={CatCoffee} />
                         </div>
+                       */}
                     </div>
                 </div>
             </body>
